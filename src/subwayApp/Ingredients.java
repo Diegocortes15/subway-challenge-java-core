@@ -8,6 +8,4 @@ public class Ingredients {
     String veggies;
     String sauces;
     String whether;
-    
-    Additions additions;
 }
