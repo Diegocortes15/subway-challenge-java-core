@@ -5,6 +5,10 @@ public class Sub {
     private final Ingredients ingredients;
     private Additions additions;
 
+    public Sub() {
+        this.ingredients = new Ingredients();
+    }
+
     public Sub(Ingredients ingredients) {
         this.ingredients = ingredients;
     }

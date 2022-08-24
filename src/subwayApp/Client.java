@@ -12,6 +12,11 @@ public class Client {
                 "Ranch and BBQ",
                 "Toasted"));
 
+        Sub sub2 = new Sub(new Ingredients());
+
         System.out.println(sub.getSubIngredients().getIngredients());
+
+        Order order = new Order();
+        System.out.println(order.getOrder());
     }
 }
