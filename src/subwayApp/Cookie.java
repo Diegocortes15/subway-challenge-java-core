@@ -2,8 +2,8 @@ package subwayApp;
 
 public class Cookie {
 
-    private final int cookiePrice;
-    private final String cookieFlavor;
+    private int cookiePrice;
+    private String cookieFlavor;
 
     public Cookie() {
         this.cookieFlavor = "None";
@@ -12,6 +12,11 @@ public class Cookie {
 
     public Cookie(String flavor) {
         this.cookieFlavor = flavor;
+        this.cookiePrice = 3500;
+    }
+
+    public void setCookieFlavor(String cookieFlavor) {
+        this.cookieFlavor = cookieFlavor;
         this.cookiePrice = 3500;
     }
 

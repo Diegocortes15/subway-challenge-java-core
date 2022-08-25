@@ -2,9 +2,9 @@ package subwayApp;
 
 public class Drink {
 
-    private final int drinkPrice;
-    private final String drinkType;
-    private final String drinkFlavor;
+    private int drinkPrice;
+    private String drinkType;
+    private String drinkFlavor;
 
     public Drink() {
         this.drinkType = "None";
@@ -14,6 +14,16 @@ public class Drink {
 
     public Drink(String drinkType, String drinkFlavor) {
         this.drinkType = drinkType;
+        this.drinkFlavor = drinkFlavor;
+        this.drinkPrice = 3500;
+    }
+
+    public void setDrinkType(String drinkType) {
+        this.drinkType = drinkType;
+        this.drinkPrice = 3500;
+    }
+
+    public void setDrinkFlavor(String drinkFlavor) {
         this.drinkFlavor = drinkFlavor;
         this.drinkPrice = 3500;
     }

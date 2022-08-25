@@ -2,12 +2,12 @@ package subwayApp;
 
 public class Ingredients {
 
-    private final String bread;
-    private final String fillings;
-    private final String cheeses;
-    private final String veggies;
-    private final String sauces;
-    private final String whether;
+    private String bread;
+    private String fillings;
+    private String cheeses;
+    private String veggies;
+    private String sauces;
+    private String whether;
 
     public Ingredients() {
         this.bread = "Oregano";
@@ -24,6 +24,54 @@ public class Ingredients {
         this.cheeses = cheeses;
         this.veggies = veggies;
         this.sauces = sauces;
+        this.whether = whether;
+    }
+
+    public String getBread() {
+        return bread;
+    }
+
+    public void setBread(String bread) {
+        this.bread = bread;
+    }
+
+    public String getFillings() {
+        return fillings;
+    }
+
+    public void setFillings(String fillings) {
+        this.fillings = fillings;
+    }
+
+    public String getCheeses() {
+        return cheeses;
+    }
+
+    public void setCheeses(String cheeses) {
+        this.cheeses = cheeses;
+    }
+
+    public String getVeggies() {
+        return veggies;
+    }
+
+    public void setVeggies(String veggies) {
+        this.veggies = veggies;
+    }
+
+    public String getSauces() {
+        return sauces;
+    }
+
+    public void setSauces(String sauces) {
+        this.sauces = sauces;
+    }
+
+    public String getWhether() {
+        return whether;
+    }
+
+    public void setWhether(String whether) {
         this.whether = whether;
     }
 

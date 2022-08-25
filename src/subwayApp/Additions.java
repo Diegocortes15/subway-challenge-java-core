@@ -2,19 +2,25 @@ package subwayApp;
 
 public class Additions {
     private String addition;
-    private final int additionPrice;
+    private int additionPrice;
 
     public Additions() {
+        this.addition = "None";
         this.additionPrice = 0;
     }
 
     public Additions(String addition) {
         this.addition = addition;
-        additionPrice = 1500;
+        this.additionPrice = 1500;
     }
 
     public String getAddition() {
         return addition;
+    }
+
+    public void setAddition(String addition) {
+        this.addition = addition;
+        this.additionPrice = 1500;
     }
 
     public int getAdditionPrice(){

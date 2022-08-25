@@ -1,12 +1,10 @@
 package subwayApp;
 
-import java.util.List;
-
 public class Order {
 
     private final Sub sub;
-    private Drink drink;
-    private Cookie cookie;
+    private final Drink drink;
+    private final Cookie cookie;
     private final Receipt receipt;
 
     public Order() {
@@ -45,19 +43,4 @@ public class Order {
     public Receipt getReceipt() {
         return receipt;
     }
-
-    /*public String getOrder() {
-
-        if (drink != null && cookie != null) {
-            return "Order: \n" +
-                    "\tSub:\n" +
-                    "\t" + sub.getSubIngredients().getIngredients() + "\n" +
-                    "\tDrink: " + drink.getDrink() + "\n" +
-                    "\tCookie: " + cookie.getCookieFlavor() + "\n";
-        }
-
-        return "Order: \n" +
-                "\tSub:\n" +
-                "\t" + sub.getSubIngredients().getIngredients() + "\n";
-    }*/
 }

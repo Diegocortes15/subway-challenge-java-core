@@ -45,7 +45,7 @@ public class Receipt {
                 %s
                 
                 Additions _________________ $%s
-                %s
+                Addition: %s
                 
                 Drink _____________________ $%s
                 Drink type: %s
