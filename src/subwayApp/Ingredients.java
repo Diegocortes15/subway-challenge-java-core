@@ -28,12 +28,12 @@ public class Ingredients {
     }
 
     public String getIngredients() {
-        return "Ingredients: \n" +
-                "\t Bread: " +  bread + "\n" +
-                "\t Fillings: " + fillings + "\n" +
-                "\t Cheeses: " + cheeses + "\n" +
-                "\t Veggies: " + veggies + "\n" +
-                "\t Sauces: " + sauces + "\n" +
-                "\t Whether: " + whether;
+        return String.format("""
+                Bread: %s
+                Fillings: %s
+                Cheeses: %s
+                Veggies: %s
+                Sauces: %s
+                Whether: %s""", bread, fillings, cheeses, veggies, sauces, whether);
     }
 }
