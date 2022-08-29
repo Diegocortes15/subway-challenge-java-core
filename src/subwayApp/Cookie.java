@@ -12,12 +12,16 @@ public class Cookie {
 
     public Cookie(String flavor) {
         this.cookieFlavor = flavor;
-        this.cookiePrice = 3500;
+        setCookiePrice(3500);
     }
 
     public void setCookieFlavor(String cookieFlavor) {
         this.cookieFlavor = cookieFlavor;
-        this.cookiePrice = 3500;
+        setCookiePrice(3500);
+    }
+
+    public void setCookiePrice(int cookiePrice) {
+        this.cookiePrice = cookiePrice;
     }
 
     public String getCookieFlavor() {

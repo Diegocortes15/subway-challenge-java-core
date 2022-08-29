@@ -15,17 +15,21 @@ public class Drink {
     public Drink(String drinkType, String drinkFlavor) {
         this.drinkType = drinkType;
         this.drinkFlavor = drinkFlavor;
-        this.drinkPrice = 3500;
+        setDrinkPrice(3500);
     }
 
     public void setDrinkType(String drinkType) {
         this.drinkType = drinkType;
-        this.drinkPrice = 3500;
+        setDrinkPrice(3500);
     }
 
     public void setDrinkFlavor(String drinkFlavor) {
         this.drinkFlavor = drinkFlavor;
-        this.drinkPrice = 3500;
+        setDrinkPrice(3500);
+    }
+
+    public void setDrinkPrice(int drinkPrice) {
+        this.drinkPrice = drinkPrice;
     }
 
     public String getDrinkType() {

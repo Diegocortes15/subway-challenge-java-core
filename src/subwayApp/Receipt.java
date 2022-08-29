@@ -32,7 +32,7 @@ public class Receipt {
         this.id = System.currentTimeMillis();
     }
 
-    public String getReceipt() {
+    public String printReceipt() {
         return String.format("""
                 ==========================================
                 RECEIPT #%s

@@ -11,19 +11,23 @@ public class Additions {
 
     public Additions(String addition) {
         this.addition = addition;
-        this.additionPrice = 1500;
-    }
-
-    public String getAddition() {
-        return addition;
+        setAdditionPrice(1500);
     }
 
     public void setAddition(String addition) {
         this.addition = addition;
-        this.additionPrice = 1500;
+        setAdditionPrice(1500);
+    }
+
+    public void setAdditionPrice(int additionPrice) {
+        this.additionPrice = additionPrice;
     }
 
     public int getAdditionPrice(){
         return additionPrice;
+    }
+
+    public String getAddition() {
+        return addition;
     }
 }
