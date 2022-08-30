@@ -1,4 +1,4 @@
-package subwayApp;
+package subwayapp;
 
 import java.io.BufferedReader;
 import java.io.IOException;

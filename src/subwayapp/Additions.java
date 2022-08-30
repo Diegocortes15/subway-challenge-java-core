@@ -1,4 +1,4 @@
-package subwayApp;
+package subwayapp;
 
 public class Additions {
     private String addition;
