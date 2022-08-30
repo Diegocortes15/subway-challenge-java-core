@@ -11,7 +11,6 @@ public class Receipt {
     private long id;
 
     public Receipt(Order order) {
-//        this.orderDetails = order.getOrder();
         this.order = order;
         this.total =
                 order.getSub().getSubPrice() +

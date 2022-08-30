@@ -12,12 +12,6 @@ public class Drink {
         this.drinkPrice = 0;
     }
 
-    public Drink(String drinkType, String drinkFlavor) {
-        this.drinkType = drinkType;
-        this.drinkFlavor = drinkFlavor;
-        setDrinkPrice(3500);
-    }
-
     public void setDrinkType(String drinkType) {
         this.drinkType = drinkType;
         setDrinkPrice(3500);

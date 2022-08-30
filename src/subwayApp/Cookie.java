@@ -10,11 +10,6 @@ public class Cookie {
         this.cookiePrice = 0;
     }
 
-    public Cookie(String flavor) {
-        this.cookieFlavor = flavor;
-        setCookiePrice(3500);
-    }
-
     public void setCookieFlavor(String cookieFlavor) {
         this.cookieFlavor = cookieFlavor;
         setCookiePrice(3500);

@@ -9,11 +9,6 @@ public class Additions {
         this.additionPrice = 0;
     }
 
-    public Additions(String addition) {
-        this.addition = addition;
-        setAdditionPrice(1500);
-    }
-
     public void setAddition(String addition) {
         this.addition = addition;
         setAdditionPrice(1500);
