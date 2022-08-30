@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class SubwayMenu {
+public class SubwayStore {
 
     InputStreamReader isr = new InputStreamReader(System.in);
     BufferedReader br = new BufferedReader(isr);
@@ -16,7 +16,7 @@ public class SubwayMenu {
 
     private int numberOption;
 
-    public SubwayMenu() {
+    public SubwayStore() {
         this.ingredients = new Ingredients();
         this.additions = new Additions();
         this.drink = new Drink();
@@ -215,15 +215,43 @@ public class SubwayMenu {
         }
     }
 
-    public void menu() {
+    private void serveFullMenu(){
+        clearBackSpace();
+        Order order = new Order(new Sub(ingredients, additions), drink, cookie);
+        System.out.println(order.getReceipt().printReceipt());
+    }
+
+    private void serveComboMenu(){
+        clearBackSpace();
+        Order order = new Order(new Sub(ingredients), drink, cookie);
+        System.out.println(order.getReceipt().printReceipt());
+    }
+
+    private void serveAdditionsMenu(){
+        clearBackSpace();
+        Order order = new Order(new Sub(ingredients, additions));
+        System.out.println(order.getReceipt().printReceipt());
+    }
+
+    private void serveNormalMenu(){
+        clearBackSpace();
+        Order order = new Order(new Sub(ingredients));
+        System.out.println(order.getReceipt().printReceipt());
+    }
+
+    private void serveDefaultMenu(){
+        clearBackSpace();
+        Order order = new Order();
+        System.out.println(order.getReceipt().printReceipt());
+    }
+
+    public void orderMenu() {
 
         do {
             menuSubwayType();
 
             if (numberOption == 1) {
-                clearBackSpace();
-                Order order = new Order();
-                System.out.println(order.getReceipt().printReceipt());
+                serveDefaultMenu();
                 this.numberOption = 0;
             }
 
@@ -246,17 +274,13 @@ public class SubwayMenu {
                         drinkFlavorMenu();
                         cookieFlavorMenu();
 
-                        clearBackSpace();
-                        Order order = new Order(new Sub(ingredients, additions), drink, cookie);
-                        System.out.println(order.getReceipt().printReceipt());
+                        serveFullMenu();
                         numberOption = 0;
 
                     }
 
                     if (numberOption == 2) {
-                        clearBackSpace();
-                        Order order = new Order(new Sub(ingredients, additions));
-                        System.out.println(order.getReceipt().printReceipt());
+                        serveAdditionsMenu();
                         numberOption = 0;
                     }
                 }
@@ -269,16 +293,12 @@ public class SubwayMenu {
                         drinkFlavorMenu();
                         cookieFlavorMenu();
 
-                        clearBackSpace();
-                        Order order = new Order(new Sub(ingredients, additions), drink, cookie);
-                        System.out.println(order.getReceipt().printReceipt());
+                        serveComboMenu();
                         numberOption = 0;
                     }
 
                     if (numberOption == 2) {
-                        clearBackSpace();
-                        Order order = new Order(new Sub(ingredients));
-                        System.out.println(order.getReceipt().printReceipt());
+                        serveNormalMenu();
                         numberOption = 0;
                     }
                 }

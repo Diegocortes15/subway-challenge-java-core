@@ -3,7 +3,7 @@ package subwayApp;
 public class Client {
 
     public static void main(String[] args) {
-        SubwayMenu subwayMenu = new SubwayMenu();
-        subwayMenu.menu();
+        SubwayStore subwayStore = new SubwayStore();
+        subwayStore.orderMenu();
     }
 }
